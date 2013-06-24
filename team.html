@@ -16,19 +16,74 @@
             <script src="js/bootstrap.min.js"></script>
 			<script src="js/gdg.js"></script>
             <script src="js/dateFormat.js"></script>
+			<style> 
+			
+			/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 50px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+			</style>
 	</head>
         <body>
 		<div class="navbar-wrapper">
 		
-		    <div class="navbar"><!--NAV BAR-->
+		    <div class="navbar navbar-inverse"><!--NAV BAR-->
 					
 					<div class="navbar-inner">
 					<a class="brand" href="#">GDG Mombasa</a>
 					<ul class="nav">
 					<li><a href="index.html">Home</a></li>
-					<li class="active"><a href="events.html">News & Events</a></li>
-					<li><a href="#">Photos</a></li>
-					<li><a href="#">Meet The Organizers</a></li>
+					<li><a href="events.html">News & Events</a></li>
+					<li><a href="gallery.html">Photos</a></li>
+					<li class="active"><a href="team.html">Meet The Organizers</a></li>
+					<li><a href="">GDG Women</a></li>
 					</ul>
 					<button type="button" id="join_chapter" class="btn btn-primary pull-right" >Join Group</button>
 					</div>
@@ -36,7 +91,22 @@
 				</div><!-- end of navbar-->
 		
 		</div><!-- end of navbar-wrapper -->
-<div style="padding-top:200px;"> </div> 
+<!--<div style="padding-top:200px;"> </div> -->
+
+<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/google maps.png" alt="Mombasa">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>GDG Mombasa</h1>
+              <p class="lead">The first and most active Google Developer Group. </p>
+              <a class="btn btn-large btn-primary" href="#">Join up today</a>
+            </div>
+          </div>
+        </div>
+		</div>
+	</div>
 
 <div class="container">
 		<div class="container-fluid">
@@ -54,7 +124,7 @@
  <div class="span10"><!--Body content-->
 	<g:plusone></g:plusone>
 	<img align="center" src="img/color_bar.png">
-    
+    TEAM
 	<!-- Body Content -->
 	
     </div><!--End of span10-->
