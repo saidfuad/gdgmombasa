@@ -5,6 +5,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
             <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,300,700' rel='stylesheet' type='text/css'>
+			<link href="css/bootstrap-responsive.css" rel="stylesheet">
             <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
             <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
             <link href="css/gdg.css" rel="stylesheet" media="screen">
@@ -13,30 +14,103 @@
 			</script>
             <script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
             <script src="http://code.angularjs.org/1.0.6/angular-sanitize.min.js"></script>
+			
             <script src="js/bootstrap.min.js"></script>
 			<script src="js/gdg.js"></script>
             <script src="js/dateFormat.js"></script>
+			<style> 
+			
+			/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 50px;
+    }
+
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item {
+      height: 500px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-top: 250px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }
+			</style>
 	</head>
-        <body>
+        <body style="padding-top:45px;">
 		<div class="navbar-wrapper">
 		
-		    <div class="navbar"><!--NAV BAR-->
+		    <div class="navbar navbar-fixed-top navbar-inverse"><!--NAV BAR-->
 					
 					<div class="navbar-inner">
-					<a class="brand" href="#">GDG Mombasa</a>
+					<a class="brand" href="#"><b>GDG Mombasa</b></a>
 					<ul class="nav">
-					<li class="active"><a href="index.html">Home</a></li>
+					<li  class="active"><a href="index.html">Home</a></li>
 					<li><a href="events.html">News & Events</a></li>
 					<li><a href="gallery.html">Photos</a></li>
-					<li><a href="team.html">Meet The Organizers</a></li>
+					<li><a href="team.html">Meet The Managers</a></li>
+					<li><a href="gdgwomen.html">GDG Women</a></li>
 					</ul>
-					<button type="button" id="join_chapter" class="btn btn-primary pull-right" >Join Group</button>
+	<!-- <button type="button" id="join_chapter" class="btn btn-primary pull-right" >Join Group</button> -->
+					
+	<form class="navbar-search pull-right"> <input type="text" class="search-query" placeholder="Search">
+</form>
 					</div>
 					
 				</div><!-- end of navbar-->
 		
+		
 		</div><!-- edn of navbar-wrapper -->
-<div style="padding-top:200px;"> </div> 
+<div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/banner.png" alt="Mombasa">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>GDG Mombasa</h1>
+              <p class="lead">The first and most active Google Developer Group. </p>
+              <a class="btn btn-large btn-primary" href="#">Join up today</a>
+            </div>
+          </div>
+        </div>
+		</div>
+	</div>
 
 <div class="container">
 		<div class="container-fluid">
@@ -55,7 +129,7 @@
 	<g:plusone></g:plusone>
 	<img align="center" src="img/color_bar.png">
     <p> Google Developer Groups (GDG) Mombasa is a user group for people who are interested in Google's developer technology; everything from the Android and App Engine platforms, to product APIs like the YouTube API and the Google Calendar API, to initiatives like OpenSocial.
-	Events are held monthly at the Mewa Computer Training Centre and CAMARA hub, Mombasa.<p>
+	Events are held monthly at the Mewa Computer Training Centre, JKUAT Mombasa Campus and CAMARA hub, Mombasa.<p>
 	<p>
 	Disclaimer: GDG Mombasa is an independent group; our activities and the opinions expressed on this +Page should in no way be linked to Google, the corporation.</p>
     </div><!--End of span10-->
